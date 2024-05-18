@@ -1,0 +1,22 @@
+{
+    "manifest_version": 3,
+    "name": "Danbooru Image Downloader",
+    "version": "1.0",
+    "description": "Download images from danbooru.donmai.us tabs.",
+    "permissions": [
+      "tabs",
+      "scripting",
+      "downloads",
+      "activeTab"
+    ],
+    "host_permissions": [
+      "https://danbooru.donmai.us/*"
+    ],
+    "background": {
+      "service_worker": "background.js"
+    },
+    "action": {
+      "default_popup": "popup.html"
+    }
+  }
+  
